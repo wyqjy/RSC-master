@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="86d5bbfd-484d-40fe-be68-71fb060aa382" name="wyq">
+        <fileTransfer rootFolder="/home/wyq" accessType="SFTP" host="59.72.109.247" port="10030" sshConfigId="50515eb4-727a-4fc3-bc97-692723b0a4eb" sshConfig="root@59.72.109.247:10030 password">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
