@@ -1,7 +1,11 @@
 .idea
+../.idea
+
 
 Domain_Generalization/data/PACS
 Domain_Generalization/data/txt_lists
 Domain_Generalization/data/correct_txt_lists
-Domain_Generalization/path
+
 Domain_Generalization/TXT
+Domain_Generalization/improve_logs
+Domain_Generalization/logs
