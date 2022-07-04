@@ -197,18 +197,18 @@ class JigsawNewDataset(data.Dataset):
         #         return torchvision.utils.make_grid(x, self.grid_size, padding=0)   #拼接图片
         #     self.returnFunc = make_grid
 
-    # def get_tile(self, img, n):   #JiGen里面 将原图分割3x3
-    #     w = float(img.size[0]) / self.grid_size
-    #     y = int(n / self.grid_size)
-    #     x = n % self.grid_size
-    #     tile = img.crop([x * w, y * w, (x + 1) * w, (y + 1) * w])
-    #     tile = self._augment_tile(tile)
-    #     return tile
+    def get_tile(self, img, n):   #JiGen里面 将原图分割3x3
+        w = float(img.size[0]) / self.grid_size
+        y = int(n / self.grid_size)
+        x = n % self.grid_size
+        tile = img.crop([x * w, y * w, (x + 1) * w, (y + 1) * w])
+        tile = self._augment_tile(tile)
+        return tile
 
-    # def get_image(self, index):
-    #     framename = self.data_path + '/' + self.names[index]
-    #     img = Image.open(framename).convert('RGB')
-    #     return self._image_transformer(img)
+    def get_image(self, index):
+        framename = self.data_path + '/' + self.names[index]
+        img = Image.open(framename).convert('RGB')
+        return self._image_transformer(img)
 
     def __getitem__(self, index):
         framename = self.data_path + '/' + self.names[index]
